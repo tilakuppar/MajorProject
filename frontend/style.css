@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Carter+One&family=Jaro:opsz@6..72&family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Jaro:opsz@6..72&family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Carter+One&family=Jaro:opsz@6..72&family=Orbitron:wght@400..900&family=Space+Grotesk:wght@300..700&display=swap');
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+*{
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+}
+body{
+    background-color: black;
+    font-family: "Space Grotesk", sans-serif;
+    color: white;
+}
+.navbar{
+    height: 60px;
+    position: sticky;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px 5px;
+}
+.logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center ;
+}
+.logo-img{
+    color: white;
+    font-size: 2rem;
+}
+.logo p{
+    font-family: "Aclonica", sans-serif;    
+    margin: auto 3px;
+    letter-spacing: 1px;
+
+}
+.nav-links ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    margin: auto 0px;
+    padding: 0px;
+}
+.nav-links ul li{
+    margin:0px 30px;
+    cursor: pointer;
+}
+.nav-links ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav-links ul li:hover{
+    border-bottom:2px solid red ;
+    transition: all 0.5s linear;
+    /* transition: all 1s linear; */
+}
+.logout button{
+    font-size: 50px;
+}
+
+.hero{
+    margin: 2% auto;
+    padding: 20px 0px;
+}
+.hero h1{
+    letter-spacing: 3px;
+    font-size:65px;
+}
+.hero h3{
+    letter-spacing: 3px;
+    font-size: 40px;
+}
+.hero p{
+    font-size: larger;
+}
+.hero-img-container{
+    background-color: black;
+}
+.hero-img{
+    border-top-right-radius:25px ;
+    border-bottom-left-radius: 25px;
+}
+
+.book-btn button {
+    width: 60%;
+    height: 8vh;
+    font-size: x-large;
+    background-color: darkred;
+    color: beige;
+    border: 2px solid white;
+    outline: none;
+    border-radius: 14px;
+    text-align: center;
+    padding: 0px 10px;
+}
+.book-btn button:hover{
+    background-color: white;
+    color: darkred;
+    border: 2px solid darkred;
+    transition: all ease-out 0.5s;
+    box-shadow: 0px 0px 15px darkred;
+}
+
+.temperature{
+    background-color: rgb(141, 138, 138);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+}
+.temp-box{
+    width: 60%;
+    height: 40vh;
+}
+.temp-box h1{
+    text-align: center;
+    padding: 10px 0px;
+    text-decoration: underline;
+    font-family: "Space Grotesk", sans-serif;
+}
+.temp-box h3,h2{
+    text-align: center;
+    color:black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.temp-form{
+    width: 40%;
+    height:40vh;
+    display:flex ;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.temp-form p{
+    font-size: xx-large;
+}
+.temp-display{
+    width: 50%;
+    height: 80px;
+    background-color: rgba(0, 231, 0, 0.425);
+    color: white;
+    border: 3px solid white;
+    border-radius: 20px;
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+}
+.temp-display h1{
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-style: italic;
+    letter-spacing: 3px;
+}
+.temp-form input{
+    width: 80%;
+    height: 5vh;
+}
+
+input[type="range"] {
+    appearance: none;
+    width: 350px;
+    height: 8px;
+    background: #ddd;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  input[type="range"]::-webkit-slider-runnable-track {
+    background: linear-gradient(to right, #4caf50, #f44336); 
+    height: 20px;
+    border-radius: 5px;
+  }
+  
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none; 
+    appearance: none;
+    width: 10px;
+    height: 20px;
+    background: #ffffff; 
+    border-radius: 0%;
+    border: 1px solid black;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+  }
+  
+  input[type="range"]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #2196f3;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  input[type="range"]::-ms-thumb {
+    width: 20px;
+    height: 20px;
+    background: #2196f3;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .temp-form button{
+    width: 60%;
+    height: 5vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: none;
+    outline:none;
+    font-size:larger;
+    border-radius: 20px;
+    background-color: rgb(184, 184, 6);
+    color: #fff;
+    font-weight: bold;
+  }
+  .temp-form button:hover{
+    background-color: #fff;
+    color:  rgb(224, 224, 12);
+    transition: all linear 0.5s;
+  }
+
+  .tracking{
+    height: 70vh;
+    background-color: #ececec;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .track-clicker{
+    width: 50%;
+    height: 10vh;
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+  }
+  .tracking h1{
+    color: black;
+  }
+  .track-btn{
+    width: 60%;
+    height: 5vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: none;
+    outline:none;
+    font-size:larger;
+    border-radius: 20px;
+    background-color: rgb(25, 3, 77);
+    color: #fff;
+    font-weight: bold;
+  }
+  .track-btn:hover{
+    background-color: #fff;
+    color:  rgb(25, 3, 77);
+    transition: all linear 0.5s;
+  }
+  .map{
+    margin-top: 20px;
+    width: 100%;
+    height: 100vh;
+    padding: 10px;
+  }
+  iframe{
+    width: 100%;
+    height: 45vh;
+  }
